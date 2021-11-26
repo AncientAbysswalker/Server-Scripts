@@ -1,6 +1,8 @@
 # LXC Helpers
 A collection of functions that I use when working with LXC as shortcuts for some otherwise more complicated commands.
 
+![LXC Logo](https://github.com/AncientAbysswalker/Server-Scripts/blob/main/.readme/lxc.png?raw=true "LXC Logo")
+
 ## Function Definitions:
 ###lxc_cd_rootfs
 Used to directly access the root filesystem of an LXC container. This allows direct access to the files inside from the external Linux system. Any commands run will be done by the user external to the container.
