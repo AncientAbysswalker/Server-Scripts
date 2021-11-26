@@ -1,0 +1,2 @@
+#!/bin/bash
+lxc config device list $1

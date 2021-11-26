@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ $1 = "-t" ]; then
+    if lxc exec $2 -- /bin/bash -c "tmux has-session -t 0" ; then
+        lxc exec $2 -- /bin/bash -c "script -qfc 'tmux attach -t 0' /dev/null"
+    else
+        lxc exec $2 -- /bin/bash -c "script -qfc 'tmux' /dev/null"
+    fi
+else
+    lxc exec $1 -- /bin/bash
+fi

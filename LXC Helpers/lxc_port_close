@@ -1,0 +1,2 @@
+#!/bin/bash
+lxc config device remove $1 port$2

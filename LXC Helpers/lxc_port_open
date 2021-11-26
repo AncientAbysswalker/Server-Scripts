@@ -1,0 +1,2 @@
+#!/bin/bash
+lxc config device add $1 port$2 proxy listen=tcp:0.0.0.0:$2 connect=tcp:127.0.0.1:$2
