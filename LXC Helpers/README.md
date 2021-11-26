@@ -5,6 +5,7 @@ A collection of functions that I use when working with LXC as shortcuts for some
 
 ## Function Definitions:
 ###lxc_cd_rootfs
+
 Used to directly access the root filesystem of an LXC container. This allows direct access to the files inside from the external Linux system. Any commands run will be done by the user external to the container.
 
 ```Shell
@@ -16,9 +17,10 @@ container_name: Name of the container
 ```
 
 ###lxc_conn
+
 Used to connect to and enter an LXC container. This operates exactly like a standard ```lxc exec``` command, except there is an optional flag to maintain the session after the terminal is closed. Normally, when the terminal being used on the container is closed any running processes will also close. This command makes it easy to close a session without losing work and to hop into a pre-existing session where you left off.
 
-```Shell
+```shell
 # Usage
 lxc_conn -t container_name
 
