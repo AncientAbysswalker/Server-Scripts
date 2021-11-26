@@ -16,6 +16,7 @@ container_name: Name of the container
 ```
 
 ##lxc_conn
+
 Used to connect to and enter an LXC container. This operates exactly like a standard ```lxc exec``` command, except there is an optional flag to maintain the session after the terminal is closed. Normally, when the terminal being used on the container is closed any running processes will also close. This command makes it easy to close a session without losing work and to hop into a pre-existing session where you left off.
 
 ```shell
